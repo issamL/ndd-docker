@@ -28,7 +28,7 @@ Method generationPlaque(pRequest As commande.msg.generationPlaqueDmde, Output pR
                 if ($EXTRACT(debut,2,2) = "Z"){
                    if ($EXTRACT(debut,1,1) = "Z"){
                        set pResponse.codeRetour = "KO"
-                       set pResponse.libErreur = "Plus de plaque disponible"
+                       set pResponse.libErreur = "Plus de plaque disponible "
                    } 
                    else{
                        set fin = "AA"
@@ -65,3 +65,4 @@ XData MessageMap
 }
 
 }
+
